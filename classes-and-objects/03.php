@@ -2,7 +2,7 @@
 
 class FuelGauge
 {
-    // fuelTank in liters
+    // fuel in liters
     public int $fuel;
 
     public function __construct(int $fuel)
