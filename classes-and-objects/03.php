@@ -5,24 +5,14 @@ class FuelGauge
     // fuel in liters
     public int $fuel;
 
-    public function __construct(int $fuel)
+    public function __construct()
     {
-        $this->setFuel($fuel);
+        $this->fuel = 0;
     }
 
     public function getFuel(): int
     {
         return $this->fuel;
-    }
-
-    protected function setFuel($fuelTank): void
-    {
-        if ($fuelTank > 70) {
-            throw new InvalidArgumentException(
-                'max fuelTank is 70 l.'
-            );
-        }
-        $this->fuel = $fuelTank;
     }
 
     public function addFuel()
@@ -72,7 +62,7 @@ class Odometer
     }
 }
 
-$fuelTank = new FuelGauge(10);
+$fuelTank = new FuelGauge();
 $fuelTank->addFuel();
 $fuelTank->addFuel();
 $fuelTank->addFuel();
