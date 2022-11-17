@@ -1,0 +1,20 @@
+{
+    "name": "renars/weather-report",
+    "description": "weather report homework",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Renars Ozols",
+            "email": "renarsozols@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
