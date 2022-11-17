@@ -23,7 +23,7 @@ class WinningsManager
         $this->setLinesCoefficient(5, 3);
     }
 
-    public function setCombination(Coordinate ...$coordinates)
+    public function setCombination(Coordinate ...$coordinates): void
     {
         $combination = [];
         foreach ($coordinates as $coordinate) {
